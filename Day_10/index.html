@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image-div{
+            margin-top: 20px;
+            border: 1px solid red;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .image-display{
+            display: none;
+        }
+
+        #keySecond{
+            margin-top: 10px;
+        }
+
+        .form-items{
+            margin-top: 10px;
+        }
+        .child{
+            border: 1px solid royalblue;
+            margin: 5px;
+            padding: 20px;
+            width: 500px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <p id="text">This is the original text</p>
+    <button class="button">Click here to change the content</button>
+    <div class="image-div">
+        <img id="image" src="FC_Bayern_München_logo_(2017).svg.png" alt="">
+    </div>
+    <p id="paragraph">
+        Mouse over here to change the background color
+    </p>
+    <input type="text" id="key" placeholder="Type some characters...">
+
+    <input type="text" id="keySecond" placeholder="Type some characters...">
+    <p class="key-info"></p>
+    <div class="form">
+        <form action="" id="form">
+            <h2>Form data</h2>
+            <input type="text" name="name" id="name" placeholder="Enter your name" class="form-items">
+            <input type="email" name="" id="email" placeholder="Enter your email" class="form-items">
+            <input type="text" name="" id="city" placeholder="Enter your city" class="form-items">
+            <input type="submit" value="Submit data">
+            <p>Select your profession</p>
+            <select name="" id="dropdown">
+                <option value="Student">Student</option>
+                <option value="Looking for a job/internship">Looking for a job/internship</option>
+                <option value="Already have a job">Already have a job</option>
+                <option value="Self employed/Entrepreneur">Self employed/Entrepreneur</option>
+            </select>
+            <p id="dropdown-value"></p>
+        </form>
+    </div>
+    <h2>Shopping list</h2>
+    <ul>
+        <li class="list-item">Bread</li>
+        <li class="list-item">Potatoes</li>
+        <li class="list-item">Cabbage</li>
+        <li class="list-item">Mangoes</li>
+    </ul>
+    <div id="parent">
+
+    </div>
+    <button id="addChild">
+        Add a child element
+    </button>
+</body>
+<script src="script.js"></script>
+</html>
